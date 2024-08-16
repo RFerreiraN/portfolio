@@ -2,16 +2,6 @@
 
 /* Colores */
 
-:root {
-    --primary-color:#950952;
-    --primary-color-dark:#5e0035;
-    --secondary-color:#005c69;
-    --secondary-color-dark:#023618;
-    --gray-color: black;
-    --gray-color-dark: #333;
-
-}
-
 @font-face {
     font-family: 'yanone';
     src: url('./fonts/yanone.ttf');
@@ -52,17 +42,19 @@
  *{
     margin: 0 ;
     padding: 0;
-    box-sizing: border-box;
-   
+    box-sizing: border-box; 
 }
 
-body{
-    /* background-image: url('../IMG/abstract-background.jpg');
-    background-attachment: fixed; */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body, html{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    scrollbar-width: none;
-    
+    scrollbar-width: none;  
 }
 
 /* ************************************ */
@@ -82,8 +74,7 @@ body{
     width: 10%;  
     height: 900px;
     position: fixed;
-    background-color: black;
-   
+    background-color: black;   
 }
 
 
@@ -91,16 +82,12 @@ body{
     margin-top: 20px;
     width: 150px;
     height: 150px;
-    padding: 20px;
-    
+    padding: 20px;    
 }
 
 .fotoPerfil > img {
     border-radius: 50%;
 }
-
-
-
 
 /* Estilos barra navegación */
 
@@ -118,7 +105,7 @@ body{
 .menu ul li a{
     font-family: 'honk', Arial, Helvetica, sans-serif;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
     text-transform: uppercase;
     transition: all 0.5s;
 }
@@ -129,14 +116,10 @@ body{
 
 /* footer */
 
-footer {
-    text-align: center;
-}
 
-
-.fa-brands, .fa-solid{
-    color: #6fdc68;
-    border: 1px solid #6fdc68;
+.fa-linkedin, .fa-github, .fa-envelope{
+    color: #64bdc9;
+    border: 1px solid #64bdc9;
     border-radius: 50%;
     padding: 5px;
     font-size: 20px;
@@ -144,9 +127,9 @@ footer {
     transition: all 0.5s;
 }
 
-.fa-brands:hover, .fa-solid:hover{
-    color: #451571;
-    border: 1px solid #451571;
+.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover{
+    color: #FFA500;
+    border: 1px solid #FFA500;
     border-radius: 50%;
     transform: scale(1.30);
 }
@@ -160,12 +143,6 @@ footer {
     background-color: rgba(0,0,0,0.96);
 }
 
-/* .two-color-text{
-    background: linear-gradient(to right, #cb2525, #6fdc68); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-} */
-
 section {
     padding: 50px 0;
     min-height: 700px;
@@ -174,10 +151,13 @@ section {
     word-spacing: 4px;
 }
 
-
 /* ESTILOS SECCIONES */
 
 /* estilos home */
+
+#home, #about, #portfolio, #educacion, #skills, #contacto{
+    font-family: 'changa';
+}
 
 
 #home h1{
@@ -186,44 +166,51 @@ section {
 
 }
 
+.text{
+    font-family: 'Honk', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
 #home h2{
     font-family: 'Honk', Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
 
 #home p {
-    color: #6fdc68;
+    color: #64bdc9;
     font-size: 22px;
     font-weight: 800;
-    animation: slideIn 2s ease-in-out;
 }
 
 #home > p > a{
-    color: #451571;
+    color: #10BC79;
     transition: all 0.4s;
+    
 }
 
 #home > p > a:hover{
-    color: #6fdc68;
+    color: #e29692;
 }
  
 #home > li {
-    background-color: #6fdc68;
-    width: 15%;
+    background-color: #6fd5d8;
+    width: 18%;
     border-radius: 15px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     transition: all 0.5s;  
     list-style: none;
     text-align: center;
+    font-size: 18px;
+}
+
+#home > li:hover{
+    transform: scale(1.05);
 }
 
 #home > li > a{
     text-decoration: none;
     color: #451571;
-}
-
-#home > li:hover{
-    transform: scale(1.05);
+    text-transform: uppercase;
 }
 
 /* seccion sobre mi */
@@ -231,59 +218,233 @@ section {
 #about h1{
    font-family: 'honk' ,Arial, Helvetica, sans-serif;
    font-size: 35px;
-   padding-top: 10px;
+   
 }
 
 #about p {
-    color:#6fdc68;
+    color:#64bdc9;
+    font-size: 22px;
     padding-top: 20px;    
 }
 
 #about h2{
-    color: #10BC79;
+    color: #00FFFF;
     text-transform: uppercase;
 }
 
 #about a{
     color:#10BC79;
+    transition: all 0.3s;
+}
+
+#about a:hover{
+    color: #e29692;
 }
 
 /* Seccion portfolio */
 
-
-
 #portfolio h1{
-    font-family: 'Honk', Arial, Helvetica, sans-serif;
+    font-family: 'honk', sans-serif;
     font-size: 35px;
 }
 
-/* creamos unos divs para hacer tarjetas de presentacion para los proyectos del portfolio */
-
-.proyecto1, .proyecto2{
-    margin-top: 50px;
-    display: inline-block;
-    border:2px solid rgb(204, 204, 204, 0.25);
-    background-color: black;
-    width: 300px;
-    height: 350px;
+.proyectos{
+    display: flex;
+    gap: 15px;
+    padding-top: 25px;
+    
 }
 
-.proyecto1 > img, .proyecto2 > img{
-    padding: 10px;
+.proyecto1, .proyecto2{
+    width: 300px;
+    height: 350px;
+    border: 2px solid #00FFFF;
+    border-radius: 10px;
+    opacity: 30%;
+    transition: all 0.3s;
+}
+
+.proyecto1:hover, .proyecto2:hover{
+    opacity: 100%;
+    transform: scale(1.05);
+}
+
+.proyecto1 img, .proyecto2 img{
     width: 100%;
-    border-bottom: 1px solid rgb(204, 204, 204, 0.25);
+    border-bottom: 1px solid #00FFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+    padding: 3px;   
 }
 
 .proyecto1 h3, .proyecto2 h3{
-    color:#451571;
     text-transform: uppercase;
-    padding: 10px;
+    color: #00FFFF;
+    margin-left: 10px;
 }
 
-.proyecto1 p,.proyecto2 p{
-    color:#6fdc68;
+.proyecto1 p, .proyecto2 p{
+    color: #64bdc9;
+    margin-left: 10px;
+    font-size: 12px;
+    word-spacing: 1px;
+}
+
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    font-size: 20px; 
+    gap: 30px;
+    margin-top: 5px;
+}
+
+.html:hover{
+    transform: scale(1.10);
+}
+
+.html span, .html i{
+    color: white;
     font-size: 15px;
-    padding: 10px;
+    padding:1px 5px;
+    transition: all 0.3s;   
+}
+
+.html i:hover{
+    color: red;
+}
+
+
+.css:hover{
+    transform: scale(1.10);
+}
+
+.css span, .css i{
+    color: white;
+    font-size: 15px;
+    padding:1px 5px;
+    transition: all 0.3s;   
+}
+
+.css i:hover{
+    color: blue;
+}
+
+
+.js:hover{
+    transform: scale(1.10);
+}
+
+.js span, .js i{
+    color: white;
+    font-size: 15px;
+    padding:1px 5px;   
+    transition: all 0.3s;
+}
+
+.js i:hover{
+    color: yellow;
+}
+
+.angular:hover{
+    transform: scale(1.10);
+}
+
+.angular span, .angular i{
+    color: white;
+    font-size: 15px;
+    padding:1px 5px;   
+    transition: all 0.3s;
+}
+
+.angular i:hover{
+    color: red;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.github > a > i, .web > a > i{
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: all 0.5s;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.github > a > i:hover, .web > a > i:hover{
+    color: #e29692;
+    border: 1px solid #e29692;
+    border-radius: 50%;
+    transform: scale(1.30);
+}
+
+/* Estilos para educacion */
+
+#educacion h1{
+    font-family: 'honk', sans-serif;
+    font-size: 35px;
+}
+
+.diplomas{
+    margin-top: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #FFA500;
+}
+
+.diplomas h2{
+    font-family: 'honk', sans-serif;
+    font-size: 30px;
+}
+
+.diplomas h3{
+    color: #64bdc9;
+    font-size: 20px;
+}
+
+.diplomas h6{
+    color: #10BC79;
+    font-size: 15px;
+}
+
+.diplomas  a{
+    background-color: #32CD32;
+    text-decoration: none;
+    color: #451571;
+    font-weight: 600;
+    padding: 3px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.diplomas > a:hover{
+    background-color: #00FFFF;
+}
+
+/* Estilos para skills */
+
+#skills h1{
+    font-family: 'honk', sans-serif;
+    font-size: 35px;
+}
+
+.lenguajes,.frameworks{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.item{
+    border:2px solid #00FFFF;
+    width: 180px;
+    height: 180px;
 }
 
 
@@ -294,6 +455,66 @@ section {
 
 
 
+
+/* colores para combinar */
+.cajas{
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.caja{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #FFA500;
+    
+}
+
+.caja1{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #c0c0c0;
+}
+.caja2{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #BA55D3;
+}
+.caja3{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #00FFFF;
+}
+.caja4{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #7CFC00;
+}
+.caja5{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #32CD32;
+}
+.caja6{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color:  #F5F5F5;
+}
+.caja7{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #1E90FF;
+}
+
+/*  */
 
 
 
