@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
     <link rel="icon" href="../IMG/icons8-google-code-120.png">
     <script src="https://kit.fontawesome.com/a669f840a0.js" crossorigin="anonymous"></script>
     <title>Portfolio RFerreira</title>
@@ -22,7 +23,7 @@
               
                 <div class="menu">
                     <ul>
-                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#home" class="is-active">Home</a></li> 
                     <li><a href="#about">Sobre Mí</a> </li>
                     <li><a href="#portfolio">Portfolio</a></li> 
                     <li><a href="#educacion">Educación</a></li> 
@@ -53,7 +54,7 @@
                     <!-- <h2>Bienvenido a mi portfolio de Frontend Developer!!</h2>-->
                     <p>Puedes ponerte en contacto conmigo a través de mi <a href="mailto:ricardoferreiran@gmail.com" target="_blank">Correo.</a></p>
                     <br><br>
-                    <li><a href=".zip/CV.zip" target="_blank">Descarga mi CV!</a><br></li>
+                    <li><a class="nes-btn is-success" href=".zip/CV.zip" target="_blank">Descarga mi CV!</a><br></li>
 
                     <div class="links">
                         <a href="https://www.linkedin.com/in/ricardoferreiran" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -115,42 +116,42 @@
                         <h2>Curso Udemy</h2>
                         <h3>Iniciación en programación - Lógica de Programación.</h3>
                         <h6>Curso de 8 horas</h6><br>
-                        <a href=".zip/curso logica programacion.zip">Certificado</a>
+                        <a class="nes-btn is-success" href=".zip/curso logica programacion.zip">Certificado</a>
                     </div>
 
                     <div class="diplomas">
                         <h2>Programa de formación digital - Fundación Telefónica</h2>
                         <h3>Introducción a la Programación - Lógica de Programación</h3>
                         <h6>Curso de 30 horas</h6><br>
-                        <a href=".zip/Diploma inicios programacion - telefonica.zip">Certificado</a>
+                        <a class="nes-btn is-success" href=".zip/Diploma inicios programacion - telefonica.zip">Certificado</a>
                     </div>
 
                     <div class="diplomas">
                         <h2>Google Activate - Introducción al Desarrollo Web</h2>
                         <h3>HTML5</h3>
                         <h6>Curso de 40 horas</h6><br>
-                        <a href=".zip/activate_certificate HTML.zip">Certificado</a>
+                        <a class="nes-btn is-success" href=".zip/activate_certificate HTML.zip">Certificado</a>
                     </div>
 
                     <div class="diplomas">
                         <h2>Google Activate - Introducción al Desarrollo Web</h2>
                         <h3>CSS3</h3>
                         <h6>Curso de 40 Horas</h6><br>
-                        <a href=".zip/activate_certificate CSS.zip">Certificado</a>
+                        <a class="nes-btn is-success" href=".zip/activate_certificate CSS.zip">Certificado</a>
                     </div>
 
                     <div class="diplomas">
                         <h2>Desarrollo Web - CCC Formación y empleo</h2>
                         <h3>Desarrollo Web para comercio electrónico</h3>
                         <h6>Curso de 150 horas</h6><br>
-                        <a href=".zip/Desarrollo_Web_para_Comercio_Electrónico_(IFCD022PO)_-Diploma_acreditativo_(Disponible_tras_su_finalización)_429.zip">Certificado</a>
+                        <a class="nes-btn is-success" href=".zip/Desarrollo_Web_para_Comercio_Electrónico_(IFCD022PO)_-Diploma_acreditativo_(Disponible_tras_su_finalización)_429.zip">Certificado</a>
                     </div>
 
                     <div class="diplomas">
                         <h2>Curso Udemy</h2>
                         <h3>Master en Javascript - jQuery - Angular - NodeJS</h3>
                         <h6>Curso de 33 horas</h6><br>
-                        <a href=".zip/Master Javascript.zip">Certificado</a>
+                        <a class="nes-btn is-success" href=".zip/Master Javascript.zip">Certificado</a>
                     </div>
 
                 </section>
@@ -159,21 +160,30 @@
                     <h1>Skills</h1>
                     <h3>Lenguajes de Programación</h3>
                     <div class="lenguajes">
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
+                        <div class="html2"><i class="fa-brands fa-html5"></i><span class="material-symbols-rounded">  HTML5</span></div>
+                        <div class="css2"><i class="fa-brands fa-css3-alt"></i><span class="material-symbols-rounded">  CSS</span></div>
+                        <div class="js2"><i class="fa-brands fa-square-js"></i><span class="material-symbols-rounded">  JavaScript</span></div>
                     </div>
                     <h3>Frameworks y Librerías</h3>
                     <div class="frameworks">
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
+                        <div class="angular2"><i class="fa-brands fa-angular"></i>  ANGULAR</div>
+                        <div class="bootstrap"><i class="fa-brands fa-bootstrap"></i>  BOOTSTRAP</div>
+                    </div>
+                    <h3>Software</h3>
+                    <div class="software">
+                        <div class="vscode"> Visual Studio Code</div>
                     </div>
                 </section>
         
                 <section id="contacto">
                     <h1>Contacto</h1>
-                    <div class="cajas">
+
+                    <div class="links-contact">
+                        <div><i class="fa-brands fa-linkedin"></i><span> Linkedin</span><a href="https://www.linkedin.com/in/ricardoferreiran" target="_blank"> in/ricardoferreiran</a></div>
+                        <div><i class="fa-brands fa-github"></i><span> GitHub</span><a href="https://github.com/RFerreiraN" target="_blank"> github.com/RFerreiraN</a></div>
+                        <div><i class="fa-solid fa-envelope"></i><span> Email</span><a href="mailto:ricardoferreiran@gmail.com" target="_blank"> ricardoferreiran@gmail.com</a></div>
+                    </div>
+                    <!-- <div class="cajas">
                         <div class="caja"></div>
                         <div class="caja1"></div>
                         <div class="caja2"></div>
@@ -182,16 +192,13 @@
                         <div class="caja5"></div>
                         <div class="caja6"></div>
                         <div class="caja7"></div>
-                    </div>
+
+                    </div> -->
+
+
                 </section>
-            </div>
-                
-                         
+            </div> 
         </div>
     </div>
     <script src="/JS/main.js"></script>   
 </body>
-<!-- CONTENIDO Y SECCIONES -->
-   
-
-<!--  -->

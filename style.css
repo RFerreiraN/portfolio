@@ -54,7 +54,8 @@
 body, html{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    scrollbar-width: none;  
+    scrollbar-width: none; 
+    cursor:default;
 }
 
 /* ************************************ */
@@ -193,19 +194,21 @@ section {
 }
  
 #home > li {
-    background-color: #6fd5d8;
-    width: 18%;
-    border-radius: 15px;
+
     padding: 10px 20px;
     transition: all 0.5s;  
     list-style: none;
-    text-align: center;
     font-size: 18px;
 }
 
-#home > li:hover{
-    transform: scale(1.05);
+.menu li a.is-active {
+    text-shadow: 1px 1px 1cm white;
+    
 }
+
+/* #home > li:hover{
+    background-color: #32CD32;
+} */
 
 #home > li > a{
     text-decoration: none;
@@ -433,19 +436,95 @@ section {
     font-size: 35px;
 }
 
-.lenguajes,.frameworks{
+
+#skills h3{
+    font-family: 'honk', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.lenguajes,.frameworks, .software{
     display: flex;
     justify-content:start;
     align-items: center;
     margin-top: 30px;
-    gap: 20px;
+    gap: 30px;
 }
 
-.item{
-    border:2px solid #00FFFF;
-    width: 180px;
-    height: 180px;
+
+.html2, .angular2{
+    color: white;
+    font-size: 15px;
+    padding:1px 5px;
+    background-color: red;
+    border-radius: 2px;
 }
+
+.css2{
+    color: white;
+    font-size: 15px;
+    padding: 1px 5px;
+    background-color: blue;
+    border-radius: 2px;
+}
+
+.js2{
+    color: black;
+    font-size: 15px;
+    padding: 1px 5px;
+    background-color: yellow;
+    border-radius: 2px;
+}
+
+.bootstrap{
+    color: white;
+    font-size: 15px;
+    padding: 1px 5px;
+    background-color: #BA55D3;
+    border-radius: 2px; 
+}
+
+.vscode{
+    color: white;
+    font-size: 15px;
+    padding: 1px 5px;
+    background-color: #1E90FF;
+    border-radius: 2px; 
+}
+
+#contacto h1{
+    font-family: 'honk', sans-serif;
+    font-size: 35px;
+}
+
+
+.links-contact{
+    display: block;
+    margin-top: 120px;
+}
+
+.links-contact > div > i{
+    color: #32CD32;
+    border: 1px solid #32CD32;
+}
+
+.links-contact > div > span {
+    color: #BA55D3;
+}
+
+.links-contact > div > a {
+    text-decoration: none;
+    color: #1E90FF;
+    transition: all 0.5s;
+}
+
+.links-contact > div > a:hover{
+    color: #FFA500;
+}
+
+
+
+
 
 
 
@@ -514,7 +593,6 @@ section {
     background-color: #1E90FF;
 }
 
-/*  */
 
 
 
@@ -537,26 +615,4 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* Animaciones */
-
-/* @keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-} */
 
