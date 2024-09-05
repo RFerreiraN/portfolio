@@ -34,7 +34,7 @@
 
  @font-face {
     font-family: 'changa';
-    src: url('/fonts/Changa.ttf');
+    src: url('./fonts/Changa.ttf');
  }
 
  /* Estilos generales */
@@ -52,7 +52,7 @@
 }
 
 body, html{
-    font-family: 'titilium', Arial, Helvetica, sans-serif;
+    font-family: 'changa', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: none; 
     cursor:default;
