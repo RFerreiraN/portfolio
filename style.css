@@ -484,6 +484,14 @@ section {
     border-radius: 2px; 
 }
 
+.nodejs{
+    color: white;
+    font-size: 15px;
+    padding: 1px 5px;
+    background-color: #32CD32;
+    border-radius: 2px; 
+}
+
 .vscode{
     color: white;
     font-size: 15px;
@@ -521,6 +529,7 @@ section {
 .links-contact > div > a:hover{
     color: #FFA500;
 }
+
 
 /* Media Queries */
 
