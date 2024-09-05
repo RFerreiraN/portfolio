@@ -138,7 +138,7 @@ body, html{
 /* Contenido */
 
 .columna2{
-    flex: 90%;
+    width: 90%;
     padding: 60px;
     height: auto;
     background-color: rgba(0,0,0,0.96);
@@ -522,77 +522,42 @@ section {
     color: #FFA500;
 }
 
+/* Media Queries */
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* colores para combinar */
-.cajas{
-    display: flex;
-    gap: 8px;
-    margin-top: 15px;
-}
-
-.caja{
+@media screen and (max-width: 767px){
+ .columna1 {
     display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #FFA500;
-    
+    width: 30%;
+    height: 1500px;
+ }
+
+ .columna2{
+    display: block;
+    width: 70%;
+    margin-left: 150px;
+ }
+
+ .proyectos{
+    display: block;
+    margin-left: -35px;
+ }
+
+ .proyecto2{
+    margin-top: 20px;
+ }
 }
 
-.caja1{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #c0c0c0;
-}
-.caja2{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #BA55D3;
-}
-.caja3{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #00FFFF;
-}
-.caja4{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #7CFC00;
-}
-.caja5{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #32CD32;
-}
-.caja6{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color:  #F5F5F5;
-}
-.caja7{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #1E90FF;
-}
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .columna1{
+        display: block;
+        width: 15%;
+    }
 
+    /* .columna2{
+        display: block;
+        width: 85%;
+    } */
+}
 
 
 
