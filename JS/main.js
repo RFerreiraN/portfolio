@@ -1,4 +1,11 @@
 // Efecto typing
+window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+        duration: 3000,
+        origin: 'top',
+        distance: '100px'
+    });
 
 const div = document.querySelector(".text"),
       texto = "Bienvenido a mi portfolio de Frontend Developer!!";
@@ -25,4 +32,6 @@ document.querySelectorAll('.menu li a').forEach(link => {
             this.classList.add('is-active');
         });
 });
+
+
 

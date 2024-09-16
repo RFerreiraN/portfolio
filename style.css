@@ -55,10 +55,221 @@ body, html{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: none; 
-    cursor:default;
+    
 }
 
-/* ************************************ */
+/* Estilos navbar */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content:space-around ;
+    align-items: center;
+    border-bottom: 1px solid rgb(18, 147, 186); 
+    
+}
+
+.menu{
+   
+    flex: 25%;
+    width: 100%;
+    height: inherit;
+    text-align:center  
+}
+
+.menu span{
+    color: rgb(18, 147, 186);
+}
+
+.list{
+    flex: 75%;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+
+}
+
+
+.list > ul > li {
+    display: inline;
+    padding: 15px;
+        
+}
+
+.list > ul > li > a{
+    color: rgb(18, 147, 186);
+    text-decoration: none;
+    transition: all 0.3s; 
+}
+
+div.list  ul li a:hover{
+    color: black;
+    transform: scale(1.80);
+    border-bottom: 1px solid black;
+}
+
+/* Estilos about*/
+
+.secciones {
+     display: flex;
+     /* flex-wrap: wrap; */
+     width: 100%;
+     height: auto;
+     min-height: 600px;
+     padding: 20px;
+}
+
+.left{
+    width: 50%;
+    height: auto;  
+    list-style: none; 
+}
+
+.left span{
+    color: rgb(18, 147, 186);
+}
+
+
+
+.left > li > a{
+    
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: rgb(18, 147, 186);
+    color: black;
+    border-radius: 5px;
+    transition: all 0.4s;
+    
+}
+
+
+.left > li > a:hover{
+    background-color: rgb(9, 98, 126);
+    color: white;
+}
+
+.links{
+    margin-top: 25px;  
+}
+
+.links > a {
+    
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.rigth{
+    width: 50%;  
+    height: auto;
+    text-align: right;
+}
+
+div.fotoPerfil > img {
+    width: 50px;
+    
+}
+
+#about{
+    height: auto;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************
+
 
 .contenedor {
     display: flex; 
@@ -90,7 +301,7 @@ body, html{
     border-radius: 50%;
 }
 
-/* Estilos barra navegación */
+// Estilos barra navegación 
 
 .menu{
     margin-top: 130px;
@@ -121,7 +332,7 @@ body, html{
     
 }
 
-/* footer */
+/* footer 
 
 
 .fa-linkedin, .fa-github, .fa-envelope{
@@ -141,8 +352,7 @@ body, html{
     transform: scale(1.30);
 }
 
-/* Contenido */
-
+/* Contenido 
 .main{
     flex: 90%;
     width: 100%;
@@ -163,9 +373,9 @@ section {
     word-spacing: 4px;
 }
 
-/* ESTILOS SECCIONES */
+/* ESTILOS SECCIONES 
 
-/* estilos home */
+/* estilos home 
 
 #home, #about, #portfolio, #educacion, #skills, #contacto{
     font-family: 'changa';
@@ -219,7 +429,7 @@ section {
 
 /* #home > li:hover{
     background-color: #32CD32;
-} */
+} 
 
 #home > li > a{
     text-decoration: none;
@@ -227,7 +437,7 @@ section {
     text-transform: uppercase;
 }
 
-/* seccion sobre mi */
+/* seccion sobre mi *
 
 #about h1{
    font-family: 'honk' ,Arial, Helvetica, sans-serif;
@@ -255,7 +465,7 @@ section {
     color: #e29692;
 }
 
-/* Seccion portfolio */
+/* Seccion portfolio *
 
 #portfolio h1{
     font-family: 'honk', sans-serif;
@@ -398,7 +608,7 @@ section {
     transform: scale(1.30);
 }
 
-/* Estilos para educacion */
+/* Estilos para educacion *
 
 #educacion h1{
     font-family: 'honk', sans-serif;
@@ -440,7 +650,7 @@ section {
     background-color: #00FFFF;
 }
 
-/* Estilos para skills */
+/* Estilos para skills *
 
 #skills h1{
     font-family: 'honk', sans-serif;
@@ -542,7 +752,7 @@ section {
 }
 
 
-/* Media Queries */
+/* Media Queries *
 
 @media screen and (max-width: 767px){
  .columna1 {
@@ -573,13 +783,12 @@ section {
         width: 15%;
     }
 
-    /* .columna2{
-        display: block;
-        width: 85%;
-    } */
+   
 }
 
 
+
+*************** */
 
 
 
