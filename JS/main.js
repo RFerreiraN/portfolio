@@ -2,9 +2,21 @@
 window.sr = ScrollReveal();
 
     sr.reveal('.navbar', {
-        duration: 3000,
+        duration: 2000,
         origin: 'top',
         distance: '100px'
+    });
+
+    sr.reveal('.left', {
+        duration: 2000,
+        origin : 'left',
+        distance : '100px'
+    })
+
+    sr.reveal('.fotoPerfil', {
+        duration: 2000,
+        origin: 'rigth',
+        distance: '150px'
     });
 
 const div = document.querySelector(".text"),
