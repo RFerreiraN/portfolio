@@ -1,3 +1,4 @@
+
 // Efecto typing
 window.sr = ScrollReveal();
 
@@ -18,6 +19,30 @@ window.sr = ScrollReveal();
         origin: 'rigth',
         distance: '150px'
     });
+
+    sr.reveal('.titulo' ,{
+        duration: 2500,
+        origin: 'bottom',
+        distance : '100px'
+    });
+
+    sr.reveal('.about', {
+        duration : 2500,
+        origin : 'bottom',
+        distance : '100px'
+    });
+
+    sr.reveal('.proyectos', {
+        duration: 2000,
+        origin : 'left',
+        distance: '200px'
+    });
+
+    sr.reveal('.tituloPortfolio', {
+        duration : 2500,
+        origin : 'bottom',
+        distance : '100px'
+    })
 
 const div = document.querySelector(".text"),
       texto = "Bienvenido a mi portfolio de Frontend Developer!!";
