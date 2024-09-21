@@ -1,5 +1,5 @@
 
-// Efecto typing
+
 window.sr = ScrollReveal();
 
     sr.reveal('.navbar', {
@@ -42,7 +42,76 @@ window.sr = ScrollReveal();
         duration : 2500,
         origin : 'bottom',
         distance : '100px'
+    });
+
+    sr.reveal('.tituloEducacion', {
+        duration : 2500,
+        origin : 'bottom',
+        distance : '100px'
+    });
+
+    sr.reveal('.diplomas', {
+        duration : 2000,
+        origin : 'left',
+        distance : '200px'
+    });
+
+    sr.reveal('.back', {
+        duration : 2500,
+        origin : 'right',
+        distance : '200px'
+    });
+
+    sr.reveal('.tituloSkills', {
+        duration : 2500,
+        origin : 'bottom',
+        distance : '100px'
+    });
+
+    sr.reveal('.lenguajes', {
+        duration : 2000,
+        origin : 'left',
+        distance : '200px'
+    });
+
+    sr.reveal('.frameworks', {
+        duration : 2000,
+        origin : 'right',
+        distance : '200px'
+    });
+
+    sr.reveal('.software', {
+        duration : 2000,
+        origin : 'left',
+        distance : '200px'
+    });
+
+    sr.reveal('.titles', {
+        duration : 2500,
+        origin : 'top',
+        distance : '200px'
+    });
+
+    sr.reveal('.tituloContacto', {
+        duration : 2500,
+        origin : 'bottom',
+        distance : '100px'
+    });
+
+    sr.reveal('.links-contact' , {
+        duration : 2000,
+        origin : 'left',
+        distance : '200px'
+    });
+
+    sr.reveal('footer' , {
+        duration : 2000,
+        origin : 'bottom',
+        distance : '200px'
     })
+
+
+// Efecto typing
 
 const div = document.querySelector(".text"),
       texto = "Bienvenido a mi portfolio de Frontend Developer!!";
@@ -63,9 +132,9 @@ efectotyping(div, texto)
 
 // Clase is active del menu
 
-document.querySelectorAll('.menu li a').forEach(link => {
+document.querySelectorAll('.list li a').forEach(link => {
         link.addEventListener('click', function() {
-            document.querySelector('.menu li a.is-active')?.classList.remove('is-active');
+            document.querySelector('.list li a.is-active')?.classList.remove('is-active');
             this.classList.add('is-active');
         });
 });
