@@ -143,6 +143,7 @@ body, html{
 }
 
 .list > ul > li > a:hover{
+    transform: scale(1.10);
     color: rgb(9, 98, 126);
 }
 
@@ -215,7 +216,7 @@ body, html{
 }
 
 div.fotoPerfil > img {
-    width: 50%;
+    width: 20%;
     border-radius: 40%;   
 }
 
@@ -241,7 +242,7 @@ div.fotoPerfil > img {
 }
 
 .foto2{
-    flex: 50%;
+    flex: 10%;
     text-align: center;
 }
 
@@ -528,7 +529,67 @@ footer a{
        
 }
 
+/* Media Queries */
+@media screen and (max-width: 767px){
+.fixed{
+    position: relative;
+}
 
+.navbar{
+    display: block;
+    border: none;
+    text-align: center;
+}
+.list{
+    display: block;
+    
+}
+ .list ul li{
+    width: 100%;
+    margin: 5px;
+    border: 1px solid rgb(9, 98, 126);  
+    border-radius: 8px;
+}
+
+.list ul li a{
+    
+    width: 100%;
+    text-align: center;
+}
+
+.left{
+    width: 100%;
+    margin-top:100px;
+}
+
+.rigth{
+    width: 100%;
+}
+
+.foto2{
+    display: none;
+}
+
+.aboutTexto{
+    margin-left: 100px;
+    width: 100%;
+}
+
+.proyectos{
+    display: block;
+    
+}
+
+.proyecto1, .proyecto2{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+}
 
 /* Media Queries *
 
