@@ -536,43 +536,6 @@ footer a{
        
 }
 
-.hexagono {
-    width: 100px; /* Ancho del hexágono */
-    height: 55px; /* Altura de la parte media */
-    background-color: #3498db; /* Color de fondo */
-    position: relative;
-    display: inline-block;
-    margin: 20px;
-  }
-
-  /* Triángulo superior */
-  .hexagono:before {
-    content: "";
-    position: absolute;
-    top: -27.5px;
-    left: 0;
-    width: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 27.5px solid #3498db;
-  }
-
-  /* Triángulo inferior */
-  .hexagono:after {
-    content: "";
-    position: absolute;
-    bottom: -27.5px;
-    left: 0;
-    width: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 27.5px solid #3498db;
-  }
- 
-  .hexagono > img {
-     width: 20%;
-  }
-
 
 
 /* Media Queries */
@@ -632,48 +595,8 @@ footer a{
 }
 
 
-
-
-
 }
 
-/* Media Queries *
-
-@media screen and (max-width: 767px){
- .columna1 {
-    display: block;
-    width: 30%;
-    height: 1500px;
- }
-
- .columna2{
-    display: block;
-    width: 70%;
-    margin-left: 150px;
- }
-
- .proyectos{
-    display: block;
-    margin-left: -35px;
- }
-
- .proyecto2{
-    margin-top: 20px;
- }
-}
-
-@media screen and (min-width : 768px) and (max-width : 1023px){
-    .columna1{
-        display: block;
-        width: 15%;
-    }
-
-   
-}
-
-
-
-*************** */
 
 
 
