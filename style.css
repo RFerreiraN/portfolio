@@ -527,14 +527,14 @@ footer{
     padding: 15px;  
 }
 
-footer li {
+footer li{
     list-style: none;
 }
 
 footer a{
-    color: #1293ba;
     text-decoration: none;
-       
+    color: #1293ba;
+     
 }
 
 
