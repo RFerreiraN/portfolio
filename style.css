@@ -216,8 +216,9 @@ body, html{
 }
 
 div.fotoPerfil > img {
-    width: 20%;
-    border-radius: 40%;   
+    width: 30%;
+    border-radius: 10%;   
+    overflow: hidden;
 }
 
 .titulo {
@@ -244,6 +245,12 @@ div.fotoPerfil > img {
 .foto2{
     flex: 10%;
     text-align: center;
+    
+}
+
+.foto2 > img{
+    border-radius: 10%;
+    overflow: hidden;
 }
 
 .aboutTexto{
@@ -524,10 +531,49 @@ footer li {
 }
 
 footer a{
-    color: rgb(18, 147, 186);
+    color: #1293ba;
     text-decoration: none;
        
 }
+
+.hexagono {
+    width: 100px; /* Ancho del hexágono */
+    height: 55px; /* Altura de la parte media */
+    background-color: #3498db; /* Color de fondo */
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  /* Triángulo superior */
+  .hexagono:before {
+    content: "";
+    position: absolute;
+    top: -27.5px;
+    left: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 27.5px solid #3498db;
+  }
+
+  /* Triángulo inferior */
+  .hexagono:after {
+    content: "";
+    position: absolute;
+    bottom: -27.5px;
+    left: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 27.5px solid #3498db;
+  }
+ 
+  .hexagono > img {
+     width: 20%;
+  }
+
+
 
 /* Media Queries */
 @media screen and (max-width: 767px){
