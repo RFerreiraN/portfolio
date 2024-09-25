@@ -23,7 +23,7 @@
  }
 
  @font-face {
-    font-family: 'Oswald';
+    font-family: '';
     src: url('./fonts/Oswald.ttf');
  }
 
@@ -40,9 +40,10 @@
  /* Estilos generales */
 
  *{
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    
 }
 
 .clearfix::after {
@@ -55,483 +56,588 @@ body, html{
     font-family: 'changa', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: none; 
-    cursor:default;
+    font-size: 18px;
+    
 }
 
-/* ************************************ */
-
-.contenedor {
-    display: flex; 
-}
-
-.navbar{
-    flex: 10%;
-    width: 100%;
-    height: 900px;
-}
-
-.columna1{ 
+.back{
     display: block;
-    width: 10%;  
-    height: 900px;
+    margin-right: 50px;
+    
+}
+
+.back a{
+    text-decoration: none;
+    color: rgb(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.back a:hover{
+    color: black;
+}
+/* Estilos navbar */
+
+.fixed{
     position: fixed;
-    background-color: black;   
+    width: 100%;
+    background-color: white;
+    z-index: 1000; 
 }
 
-
-.fotoPerfil{
-    margin-top: 20px;
-    width: 150px;
-    height: 150px;
-    padding: 20px;    
+ .navbar{
+    display: inline-flex;
+    position: sticky;
+    padding: 10px;
+    width: 100%;
+    justify-content:space-around ;
+    align-items: center;
+    border-bottom: 1px solid rgb(18, 147, 186);
 }
 
-.fotoPerfil > img {
-    border-radius: 50%;
-}
-
-/* Estilos barra navegación */
-
-.menu{
-    margin-top: 130px;
+.menu{   
+    flex: 25%;
+    width: 100%;
+    height: inherit;
+    text-align:center; 
 }
 
 .menu ul li{
-    list-style: none;
-    padding: 5px;
-    text-align: center;
-    transition: all 0.5s;
+    list-style: none; 
 }
+
 
 .menu ul li a{
-    font-family: 'honk', Arial, Helvetica, sans-serif;
+    color: rgb(18, 147, 186);
     text-decoration: none;
-    font-size: 25px;
-    text-transform: uppercase;
-    transition: all 0.5s;
 }
 
-.menu ul li:hover{
+.menu ul li a:hover{
+    color: rgb(9, 98, 126);
+}
+
+.list{
+    flex: 75%;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    
+}
+
+.list > ul > li {
+    display: inline-flex;
+    
+}
+
+.list li a.is-active {
+    text-shadow: 1px 1px 1cm blue;
+    transform: scale(1.10);
+    
+}
+
+.list > ul > li > a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(18, 147, 186);
+    text-decoration: none;
+    transition: all 0.3s;     
+}
+
+.list > ul > li > a:hover{
+    transform: scale(1.10);
+    color: rgb(9, 98, 126);
+}
+
+/* Estilos about*/
+
+.secciones {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     height: auto;
+     padding-top: 80px;
+}
+
+.left{
+    width:40%;
+    height: auto;
+    font-size: 18px; 
+    padding-left: 70px;
+}
+
+.left span{
+    color: rgb(18, 147, 186);
+}
+
+.left ul li{
+    list-style: none;
+}
+
+.left > ul > li > a{
+    
+    padding: 5px 30px;
+    text-decoration: none;
+    background-color: rgb(18, 147, 186);
+    color: black;
+    border-radius: 5px;
+    transition: all 0.4s;  
+}
+
+
+.left > ul > li > a:hover{
+    background-color: rgb(9, 98, 126);
+    color: white;
+}
+
+.links{
+    margin-top: 25px;  
+}
+
+.links > ul > li  {
+    display: inline-flex;
+    padding: 8px;
+    font-size: 22px;   
+}
+
+.links ul li a{
+    color: black;
+    transition: all 0.4s;
+}
+
+.links ul li a:hover{
+    color: rgb(18, 147, 186);
     transform: scale(1.15);
 }
 
-/* footer */
-
-
-.fa-linkedin, .fa-github, .fa-envelope{
-    color: #64bdc9;
-    border: 1px solid #64bdc9;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: 35px;
-    transition: all 0.5s;
-}
-
-.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover{
-    color: #FFA500;
-    border: 1px solid #FFA500;
-    border-radius: 50%;
-    transform: scale(1.30);
-}
-
-/* Contenido */
-
-.columna2{
-    width: 90%;
-    padding: 60px;
-    height: auto;
-    background-color: rgba(0,0,0,0.96);
-}
-
-section {
-    padding: 50px 0;
-    min-height: 700px;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-    word-spacing: 4px;
-}
-
-/* ESTILOS SECCIONES */
-
-/* estilos home */
-
-#home, #about, #portfolio, #educacion, #skills, #contacto{
-    font-family: 'changa';
-}
-
-
-#home h1{
-    font-family: 'Honk', Arial, Helvetica, sans-serif;
-    font-size: 50px;
+.rigth{
+    width: 60%;  
+    height: 20%;
+    text-align: center;
 
 }
 
-.text{
-    font-family: 'Honk', Arial, Helvetica, sans-serif;
-    font-size: 40px;
+div.fotoPerfil > img {
+    width: 30%;
+    border-radius: 10%;   
+    overflow: hidden;
 }
 
-#home h2{
-    font-family: 'Honk', Arial, Helvetica, sans-serif;
-    font-size: 40px;
+.titulo {
+    width: 100%;
+    text-align: center;
 }
 
-#home p {
-    color: #64bdc9;
-    font-size: 22px;
-    font-weight: 800;
+.titulo a{
+    color: rgb(9, 98, 126);
+    text-decoration: underline;
+
 }
 
-#home > p > a{
-    color: #10BC79;
-    transition: all 0.4s;
-    
-}
-
-#home > p > a:hover{
-    color: #e29692;
-}
- 
-#home > li {
-
-    padding: 10px 20px;
-    transition: all 0.5s;  
-    list-style: none;
-    font-size: 18px;
-}
-
-.menu li a.is-active {
-    text-shadow: 1px 1px 1cm white;
-    
-}
-
-/* #home > li:hover{
-    background-color: #32CD32;
-} */
-
-#home > li > a{
-    text-decoration: none;
-    color: #451571;
-    text-transform: uppercase;
-}
-
-/* seccion sobre mi */
-
-#about h1{
-   font-family: 'honk' ,Arial, Helvetica, sans-serif;
-   font-size: 35px;
-   
-}
-
-#about p {
-    color:#64bdc9;
-    font-size: 22px;
-    padding-top: 20px;    
-}
-
-#about h2{
-    color: #00FFFF;
-    text-transform: uppercase;
-}
-
-#about a{
-    color:#10BC79;
-    transition: all 0.3s;
-}
-
-#about a:hover{
-    color: #e29692;
-}
-
-/* Seccion portfolio */
-
-#portfolio h1{
-    font-family: 'honk', sans-serif;
-    font-size: 35px;
-}
-
-.proyectos{
+.about{
     display: flex;
-    gap: 15px;
-    padding-top: 25px;
+    flex: 100%;
+    width: 100%;
+    /* height: auto; */
+    padding-top: 15px;
+    padding-right: 115px;
+    gap: 10px;
+}
+
+.foto2{
+    flex: 10%;
+    text-align: center;
     
 }
+
+.foto2 > img{
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.aboutTexto{
+    flex: 30%;
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.about p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.back {
+    flex: 100%;
+    text-align: right;
+}
+
+.back ul li{
+    list-style: none;
+}
+
+.back ul li a{
+    text-decoration: none;
+    color: rgb(0,0,0,0.3);
+    transition: all 0.4s;
+}
+
+.back ul li a:hover{
+    color: black;
+}
+
+/* estilos portfolio */
+
+#portfolio{
+    padding-top: 30px;
+    min-height: 700px;
+}
+
+.tituloPortfolio {
+    margin-top: 30px;
+    text-align: center;   
+}
+
+.tituloPortfolio a{ 
+    color: rgb(9, 98, 126);
+    text-decoration: underline;
+}
+
+ 
+.proyectos{
+    display: inline-flex;
+    padding: 70px;
+    gap: 15px;
+}  
 
 .proyecto1, .proyecto2{
-    width: 300px;
-    height: 350px;
-    border: 2px solid #00FFFF;
+    width:20%;
+    height: auto;
+    border: 2px solid rgb(9, 98, 126);
     border-radius: 10px;
-    opacity: 30%;
+    opacity: 70%;
     transition: all 0.3s;
 }
+
 
 .proyecto1:hover, .proyecto2:hover{
     opacity: 100%;
     transform: scale(1.05);
 }
 
-.proyecto1 img, .proyecto2 img{
+
+.proyecto1 > img , .proyecto2 > img, .proyecto3 > img{
     width: 100%;
-    border-bottom: 1px solid #00FFFF;
+    border-bottom: 1px solid rgb(9, 98, 126);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;  
-    padding: 3px;   
+    padding: 3px;
 }
 
 .proyecto1 h3, .proyecto2 h3{
     text-transform: uppercase;
-    color: #00FFFF;
+    color: rgb(18, 147, 186);
     margin-left: 10px;
+}
+
+.proyectos h6{
+    color: rgb(9, 98, 126);
+    text-align: left;
+    padding: 10px;
 }
 
 .proyecto1 p, .proyecto2 p{
-    color: #64bdc9;
+    color: black;
     margin-left: 10px;
     font-size: 12px;
-    word-spacing: 1px;
+} 
+
+ .tecnologias{
+    display: inline-flex;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10px;
+    gap: 10px;
 }
 
 
-.tecnologias{
-    display: flex;
-    justify-content: center;
-    font-size: 20px; 
-    gap: 30px;
-    margin-top: 5px;
-}
-
-.html:hover{
-    transform: scale(1.10);
-}
-
-.html span, .html i{
-    color: white;
+.html i, .css i, .js i, .angular i{
+    border: 1px solid black;
+    border-radius: 50%; 
     font-size: 15px;
-    padding:1px 5px;
-    transition: all 0.3s;   
-}
-
-.html i:hover{
-    color: red;
-}
-
-
-.css:hover{
-    transform: scale(1.10);
-}
-
-.css span, .css i{
-    color: white;
-    font-size: 15px;
-    padding:1px 5px;
-    transition: all 0.3s;   
-}
-
-.css i:hover{
-    color: blue;
-}
-
-
-.js:hover{
-    transform: scale(1.10);
-}
-
-.js span, .js i{
-    color: white;
-    font-size: 15px;
-    padding:1px 5px;   
-    transition: all 0.3s;
-}
-
-.js i:hover{
-    color: yellow;
-}
-
-.angular:hover{
-    transform: scale(1.10);
-}
-
-.angular span, .angular i{
-    color: white;
-    font-size: 15px;
-    padding:1px 5px;   
-    transition: all 0.3s;
-}
-
-.angular i:hover{
-    color: red;
+    padding: 5px;  
+    
 }
 
 .enlaces{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+    display: inline-flex;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10px;
+    gap: 10px;  
 }
 
-.github > a > i, .web > a > i{
-    color: white;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: 15px;
-    transition: all 0.5s;
-    border: 1px solid white;
-    border-radius: 50%;
+.github > a, .web > a{
+    color: black;
+    border-radius: 50%; 
+    font-size: 15px;
+    padding: 5px; 
+    transition: all 0.4s;       
 }
 
-.github > a > i:hover, .web > a > i:hover{
-    color: #e29692;
-    border: 1px solid #e29692;
-    border-radius: 50%;
-    transform: scale(1.30);
+.github > a:hover, .web > a:hover{
+    color: rgb(9, 98, 126);
 }
 
-/* Estilos para educacion */
 
-#educacion h1{
-    font-family: 'honk', sans-serif;
-    font-size: 35px;
+/* estilos educación */
+
+#eduacacion{
+    padding-top: 30px;
+    min-height: 700px;
+}
+
+.tituloEducacion {
+    padding-top: 60px;
+    text-align: center;   
+}
+
+.tituloEducacion a{ 
+    color: rgb(9, 98, 126);
+    text-decoration: underline;
 }
 
 .diplomas{
-    margin-top: 30px;
-    padding: 15px;
-    border-bottom: 1px solid #FFA500;
+    border-bottom: 1px solid rgb(9, 98, 126);
+    padding: 30px;
 }
 
-.diplomas h2{
-    font-family: 'honk', sans-serif;
-    font-size: 30px;
+.diplomas h2 {
+    color: rgb(9, 98, 126);
 }
 
 .diplomas h3{
-    color: #64bdc9;
-    font-size: 20px;
+    color: rgb(18, 147, 186);
 }
 
-.diplomas h6{
-    color: #10BC79;
-    font-size: 15px;
-}
-
-.diplomas  a{
-    background-color: #32CD32;
+.diplomas a{
     text-decoration: none;
-    color: #451571;
-    font-weight: 600;
-    padding: 3px 15px;
+    background-color: rgb(18, 147, 186);
+    border: none;
+    color: black;
+    margin-top: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
     border-radius: 8px;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
-.diplomas > a:hover{
-    background-color: #00FFFF;
+.diplomas a:hover{
+    background-color: rgb(9, 98, 126);
+    color: white;
 }
 
-/* Estilos para skills */
+/* estilos skills */
 
-#skills h1{
-    font-family: 'honk', sans-serif;
-    font-size: 35px;
+#skills{
+    padding-top: 30px;
+    min-height: 800px;
+    text-align: center;
 }
 
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 #skills h3{
-    font-family: 'honk', sans-serif;
-    font-size: 25px;
-    margin-top: 30px;
+    width: 100%;
+    color: rgb(18, 147, 186);
+    padding-left: 30px;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
-.lenguajes,.frameworks, .software{
-    display: flex;
-    justify-content:start;
-    align-items: center;
-    margin-top: 30px;
-    gap: 30px;
+.tituloSkills {  
+    padding-top: 60px;
+    text-align: center;   
 }
 
-
-.html2, .angular2{
-    color: white;
-    font-size: 15px;
-    padding:1px 5px;
-    background-color: red;
-    border-radius: 2px;
+.tituloSkills a{ 
+    color: rgb(9, 98, 126);
+    text-decoration: underline;
+   
 }
 
-.css2{
-    color: white;
-    font-size: 15px;
-    padding: 1px 5px;
-    background-color: blue;
-    border-radius: 2px;
+.lenguajes, .frameworks, .software{
+    flex: 100%;
+    padding: 20px;
 }
 
-.js2{
-    color: black;
-    font-size: 15px;
-    padding: 1px 5px;
-    background-color: yellow;
-    border-radius: 2px;
+.lenguajes > img, .frameworks > img, .software > img{
+    width: 70px;
+    margin-left: 30px;
 }
 
-.bootstrap{
-    color: white;
-    font-size: 15px;
-    padding: 1px 5px;
-    background-color: #BA55D3;
-    border-radius: 2px; 
+/* estilos contacto */
+
+#contacto{
+    padding-top: 60px;
+    min-height: 600px;  
 }
 
-.nodejs{
-    color: white;
-    font-size: 15px;
-    padding: 1px 5px;
-    background-color: #32CD32;
-    border-radius: 2px; 
+.tituloContacto {  
+    padding-top: 30px;
+    text-align: center;   
 }
 
-.vscode{
-    color: white;
-    font-size: 15px;
-    padding: 1px 5px;
-    background-color: #1E90FF;
-    border-radius: 2px; 
+.tituloContacto a{ 
+    color: rgb(9, 98, 126);
+    text-decoration: underline;   
 }
-
-#contacto h1{
-    font-family: 'honk', sans-serif;
-    font-size: 35px;
-}
-
 
 .links-contact{
-    display: block;
-    margin-top: 120px;
+    padding-left: 30px;
 }
 
-.links-contact > div > i{
-    color: #32CD32;
-    border: 1px solid #32CD32;
+.fa-linkedin, .fa-github, .fa-envelope{
+    font-size: 20px;
 }
 
-.links-contact > div > span {
-    color: #BA55D3;
+.links-contact  span {
+    color: rgb(18, 147, 186);
 }
 
-.links-contact > div > a {
+.links-contact a{
+    color: rgb(9, 98, 126);
     text-decoration: none;
-    color: #1E90FF;
-    transition: all 0.5s;
 }
 
-.links-contact > div > a:hover{
-    color: #FFA500;
+/* estilos footer */
+
+footer{
+    display: block;
+    border-top: 1px solid rgb(9, 98, 126);  
+    padding: 15px;  
 }
+
+footer li {
+    list-style: none;
+}
+
+footer a{
+    color: #1293ba;
+    text-decoration: none;
+       
+}
+
+.hexagono {
+    width: 100px; /* Ancho del hexágono */
+    height: 55px; /* Altura de la parte media */
+    background-color: #3498db; /* Color de fondo */
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  /* Triángulo superior */
+  .hexagono:before {
+    content: "";
+    position: absolute;
+    top: -27.5px;
+    left: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 27.5px solid #3498db;
+  }
+
+  /* Triángulo inferior */
+  .hexagono:after {
+    content: "";
+    position: absolute;
+    bottom: -27.5px;
+    left: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 27.5px solid #3498db;
+  }
+ 
+  .hexagono > img {
+     width: 20%;
+  }
+
 
 
 /* Media Queries */
+@media screen and (max-width: 767px){
+.fixed{
+    position: relative;
+}
+
+.navbar{
+    display: block;
+    border: none;
+    text-align: center;
+}
+.list{
+    display: block;
+    
+}
+ .list ul li{
+    width: 100%;
+    margin: 5px;
+    border: 1px solid rgb(9, 98, 126);  
+    border-radius: 8px;
+}
+
+.list ul li a{
+    
+    width: 100%;
+    text-align: center;
+}
+
+.left{
+    width: 100%;
+    margin-top:100px;
+}
+
+.rigth{
+    width: 100%;
+}
+
+.foto2{
+    display: none;
+}
+
+.aboutTexto{
+    margin-left: 100px;
+    width: 100%;
+}
+
+.proyectos{
+    display: block;
+    
+}
+
+.proyecto1, .proyecto2{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+}
+
+/* Media Queries *
 
 @media screen and (max-width: 767px){
  .columna1 {
@@ -562,13 +668,12 @@ section {
         width: 15%;
     }
 
-    /* .columna2{
-        display: block;
-        width: 85%;
-    } */
+   
 }
 
 
+
+*************** */
 
 
 
