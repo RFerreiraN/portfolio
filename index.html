@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="IMG/icons8-google-code-120.png">
     <script src="https://kit.fontawesome.com/a669f840a0.js" crossorigin="anonymous"></script>
-   
+
     <title>
         < R.Ferreira>Desarrollador Web< /R.Ferreira>
     </title>
@@ -16,7 +19,7 @@
 <body>
 
     <!-- BARRA DE NAVEGACIÓN -->
-    <div class="fixed">
+    <!-- <div class="fixed">
         <div class="navbar">
             <div class="menu">
                 <ul>
@@ -37,7 +40,37 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#about"><span>
+                    < R.Ferreira />
+                </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section id="about">
         <!-- SECCIONES -->
@@ -100,7 +133,7 @@
     </section>
 
 
-    <section id="portfolio">
+    <!-- <section id="portfolio">
 
         <div class="tituloPortfolio">
             <a href="#portfolio">Portfolio</a>
@@ -125,7 +158,7 @@
                                 class="fa-solid fa-link"></i></a></div>
                 </div>
             </div>
-       
+
 
             <div class="proyecto2">
                 <img src="IMG/shoppingOnline.png" alt="shoppingOnline">
@@ -144,8 +177,8 @@
                     <div class="web"><a href="https://rferreiran.github.io/shoppingOnline/" target="_blank"><i
                                 class="fa-solid fa-link"></i></a></div>
                 </div>
-            </div> 
-            
+            </div>
+
             <div class="proyecto3">
                 <img src="IMG/calculadora.png" alt="calculadora">
                 <h3>Calculadora Javascript</h3>
@@ -162,12 +195,13 @@
                     <div class="web"><a href="https://rferreiran.github.io/Calculadora/" target="_blank"><i
                                 class="fa-solid fa-link"></i></a></div>
                 </div>
-            </div> 
+            </div>
 
             <div class="proyecto4">
-                <img src="IMG/moviSearch.png" alt="moviSearch" >
+                <img src="IMG/moviSearch.png" alt="moviSearch">
                 <h3>Buscador de Películas</h3>
-                <p>Proyecto creado para obtener información sobre nuestras películas favoritas, toda la información es obtenida a traves de la API de MovieDB (TMDB)</p>
+                <p>Proyecto creado para obtener información sobre nuestras películas favoritas, toda la información es
+                    obtenida a traves de la API de MovieDB (TMDB)</p>
                 <h6>Creada con: </h6>
                 <div class="tecnologias">
                     <div class="html"><i class="fa-brands fa-html5"></i></div>
@@ -180,15 +214,143 @@
                     <div class="web"><a href="https://rferreiran.github.io/movieSearch/" target="_blank"><i
                                 class="fa-solid fa-link"></i></a></div>
                 </div>
-            </div> 
+            </div>
         </div>
-        
+
         <div class="back">
             <a href="#about">Subir</a>
         </div>
-        
+
+    </section> -->
+
+    <section id="portfolio" class="container my-5">
+
+        <div class="text-center mb-4">
+            <h2>Portfolio</h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="IMG/portfolioBlanco.png" class="card-img-top" alt="portfolio">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5">Portfolio Web</h3>
+                        <p class="flex-grow-1">Página web desarrollada como Portfolio web personal con la finalidad de
+                            mostrar un poco de mis habilidades</p>
+                        <h6>Creada con:</h6>
+                        <div class="mb-3">
+                            <i class="fa-brands fa-html5 me-2"></i>
+                            <i class="fa-brands fa-css3-alt me-2"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-around">
+                            <a href="https://github.com/RFerreiraN/portfolio" target="_blank"
+                                class="btn btn-outline-dark btn-sm">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://rferreiran.github.io/portfolio/" target="_blank"
+                                class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="IMG/shoppingOnline.png" class="card-img-top" alt="shoppingOnline">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5">Shopping Online</h3>
+                        <p class="flex-grow-1">Proyecto E-Commerce de tienda de Moda, joyería y tecnología, desarrollado
+                            como primer proyecto para el portfolio web.</p>
+                        <h6>Creada con:</h6>
+                        <div class="mb-3">
+                            <i class="fa-brands fa-html5 me-2"></i>
+                            <i class="fa-brands fa-css3-alt me-2"></i>
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-around">
+                            <a href="https://github.com/RFerreiraN/shoppingOnline" target="_blank"
+                                class="btn btn-outline-dark btn-sm">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://rferreiran.github.io/shoppingOnline/" target="_blank"
+                                class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="IMG/calculadora.png" class="card-img-top" alt="calculadora">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5">Calculadora Javascript</h3>
+                        <p class="flex-grow-1">Pequeño proyecto en el cual se muestran técnicas básicas de manejo del
+                            DOM y eventos.</p>
+                        <h6>Creada con:</h6>
+                        <div class="mb-3">
+                            <i class="fa-brands fa-html5 me-2"></i>
+                            <i class="fa-brands fa-css3-alt me-2"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-around">
+                            <a href="https://github.com/RFerreiraN/Calculadora" target="_blank"
+                                class="btn btn-outline-dark btn-sm">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://rferreiran.github.io/Calculadora/" target="_blank"
+                                class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="IMG/moviSearch.png" class="card-img-top" alt="moviSearch">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5">Buscador de Películas</h3>
+                        <p class="flex-grow-1">Proyecto creado para obtener información sobre nuestras películas
+                            favoritas, toda la información es obtenida a través de la API de MovieDB (TMDB).</p>
+                        <h6>Creada con:</h6>
+                        <div class="mb-3">
+                            <i class="fa-brands fa-html5 me-2"></i>
+                            <i class="fa-brands fa-css3-alt me-2"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-around">
+                            <a href="https://github.com/RFerreiraN/movieSearch" target="_blank"
+                                class="btn btn-outline-dark btn-sm">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://rferreiran.github.io/movieSearch/" target="_blank"
+                                class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón volver -->
+        <div class="text-center mt-4">
+            <a href="#about" class="btn btn-link">Subir</a>
+        </div>
+
     </section>
-    
+
+
     <section id="educacion">
         <div class="tituloEducacion">
             <a href="#educacion">Educación</a>
@@ -198,35 +360,40 @@
             <h2>Curso Udemy</h2>
             <h3>Iniciación en programación - Lógica de Programación.</h3>
             <h6>Curso de 8 horas</h6>
-            <a href="zip\curso logica programacion.zip" download="logicaProgramacion.zip" class="nes-btn is-success" >Certificado</a>
+            <a href="zip\curso logica programacion.zip" download="logicaProgramacion.zip"
+                class="nes-btn is-success">Certificado</a>
         </div>
 
         <div class="diplomas">
             <h2>Programa de formación digital - Fundación Telefónica</h2>
             <h3>Introducción a la Programación - Lógica de Programación</h3>
             <h6>Curso de 30 horas</h6>
-            <a href="zip\Diploma inicios programacion - telefonica.zip" download="logicaProgramacionMovistar.zip">Certificado</a>
+            <a href="zip\Diploma inicios programacion - telefonica.zip"
+                download="logicaProgramacionMovistar.zip">Certificado</a>
         </div>
 
         <div class="diplomas">
             <h2>Google Activate - Introducción al Desarrollo Web</h2>
             <h3>HTML5</h3>
             <h6>Curso de 40 horas</h6>
-            <a href="zip\activate_certificate HTML.zip" download="googleHtml.zip" class="nes-btn is-success">Certificado</a>
+            <a href="zip\activate_certificate HTML.zip" download="googleHtml.zip"
+                class="nes-btn is-success">Certificado</a>
         </div>
 
         <div class="diplomas">
             <h2>Google Activate - Introducción al Desarrollo Web</h2>
             <h3>CSS3</h3>
             <h6>Curso de 40 Horas</h6>
-            <a href="zip\activate_certificate CSS.zip" download="googleCSS.zip" class="nes-btn is-success">Certificado</a>
+            <a href="zip\activate_certificate CSS.zip" download="googleCSS.zip"
+                class="nes-btn is-success">Certificado</a>
         </div>
 
         <div class="diplomas">
             <h2>Desarrollo Web - CCC Formación y empleo</h2>
             <h3>Desarrollo Web para comercio electrónico</h3>
             <h6>Curso de 150 horas</h6>
-            <a href="zip\Desarrollo_Web_para_Comercio_Electrónico_(IFCD022PO)_-Diploma_acreditativo_(Disponible_tras_su_finalización)_429.zip" download="cccFormacion.zip">Certificado</a>
+            <a href="zip\Desarrollo_Web_para_Comercio_Electrónico_(IFCD022PO)_-Diploma_acreditativo_(Disponible_tras_su_finalización)_429.zip"
+                download="cccFormacion.zip">Certificado</a>
         </div>
 
         <div class="diplomas">
@@ -241,45 +408,45 @@
         </div>
 
     </section>
-    
+
     <section id="skills">
         <div class="tituloSkills">
             <a href="#skills">Skills</a>
         </div>
 
-     <div class="skills">
-        <div class="titles"></div> 
-        <div class="lenguajes">
-            <h3>Lenguajes de Programación</h3>
-            <img src="IMG/logohtml.png" alt="logohtml">
-            <img src="IMG/logocss3.png" alt="logocss3">
-            <img src="IMG/logoJS.png" alt="logoJS">
-          
-        </div>
+        <div class="skills">
+            <div class="titles"></div>
+            <div class="lenguajes">
+                <h3>Lenguajes de Programación</h3>
+                <img src="IMG/logohtml.png" alt="logohtml">
+                <img src="IMG/logocss3.png" alt="logocss3">
+                <img src="IMG/logoJS.png" alt="logoJS">
 
-        <div class="titles"></div>
-        <div class="frameworks">
-            <h3>Frameworks y Librerías</h3>
-            <img src="IMG/logoangular.png" alt="logoangular">
-            <img src="IMG/logobootstrap.png" alt="logobootstrap">
-            <img src="IMG/logojquery.png" alt="logojquery">
-        </div>
+            </div>
 
-        <div class="titles"></div>
-        <div class="software">
-            <h3>Tecnologías y Herramientas</h3>
-            <img src="IMG/logonode.png" alt="logonode">
-            <img src="IMG/logonpm.png" alt="logonpm">
-            <img src="IMG/logogit.png" alt="logogit">
-            <img src="IMG/logogithub.png" alt="logogithub">
-            <img src="IMG/logomongo.png" alt="logomongo">
-            <img src="IMG/logovsc.jpeg" alt="logovsc">
-            <img src="IMG/logopostman.png" alt="logopostman">
+            <div class="titles"></div>
+            <div class="frameworks">
+                <h3>Frameworks y Librerías</h3>
+                <img src="IMG/logoangular.png" alt="logoangular">
+                <img src="IMG/logobootstrap.png" alt="logobootstrap">
+                <img src="IMG/logojquery.png" alt="logojquery">
+            </div>
+
+            <div class="titles"></div>
+            <div class="software">
+                <h3>Tecnologías y Herramientas</h3>
+                <img src="IMG/logonode.png" alt="logonode">
+                <img src="IMG/logonpm.png" alt="logonpm">
+                <img src="IMG/logogit.png" alt="logogit">
+                <img src="IMG/logogithub.png" alt="logogithub">
+                <img src="IMG/logomongo.png" alt="logomongo">
+                <img src="IMG/logovsc.jpeg" alt="logovsc">
+                <img src="IMG/logopostman.png" alt="logopostman">
+            </div>
         </div>
-    </div>
-    <div class="back">
-        <a href="#about">Subir</a>
-    </div>
+        <div class="back">
+            <a href="#about">Subir</a>
+        </div>
     </section>
 
     <section id="contacto">
@@ -290,28 +457,32 @@
             <div><i class="fa-brands fa-linkedin"></i><span> Linkedin</span><a
                     href="https://www.linkedin.com/in/ricardoferreiran" target="_blank">
                     in/ricardoferreiran</a></div>
-            <div><i class="fa-brands fa-github"></i><span> GitHub</span><a
-                    href="https://github.com/RFerreiraN" target="_blank"> github.com/RFerreiraN</a></div>
-            <div><i class="fa-solid fa-envelope"></i><span> Email</span><a
-                    href="mailto:ricardoferreiran@gmail.com" target="_blank"> ricardoferreiran@gmail.com</a>
+            <div><i class="fa-brands fa-github"></i><span> GitHub</span><a href="https://github.com/RFerreiraN"
+                    target="_blank"> github.com/RFerreiraN</a></div>
+            <div><i class="fa-solid fa-envelope"></i><span> Email</span><a href="mailto:ricardoferreiran@gmail.com"
+                    target="_blank"> ricardoferreiran@gmail.com</a>
             </div>
         </div>
         <div class="back">
             <a href="#about">Subir</a>
         </div>
-    
+
     </section>
 
     <footer>
-        
+
         <ul>
             <li>
-                <a href="#about"><  R.Ferreira > </a>
+                <a href="#about">
+                    < R.Ferreira>
+                </a>
             </li>
         </ul>
     </footer>
 
     <script src="JS\scrollreveal.js"></script>
     <script src="JS\main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
-

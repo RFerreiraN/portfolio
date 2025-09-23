@@ -85,6 +85,11 @@ body, html{
     z-index: 1000; 
 }
 
+.navbar-brand span{
+        color: rgb(9, 98, 126);
+
+}
+
  .navbar{
     display: inline-flex;
     position: sticky;
@@ -290,7 +295,124 @@ div.fotoPerfil > img {
 
 /* estilos portfolio */
 
-#portfolio{
+/* 🎨 Estilos Portfolio con Bootstrap Grid */
+#portfolio {
+  padding-top: 30px;
+  min-height: 700px;
+}
+
+.tituloPortfolio {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tituloPortfolio a {
+  color: rgb(9, 98, 126);
+  text-decoration: underline;
+}
+
+/* Cards de proyectos */
+.card {
+  border: 2px solid rgb(9, 98, 126);
+  border-radius: 10px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-bottom: 1px solid rgb(9, 98, 126);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 3px;
+}
+
+/* Títulos */
+.card h3 {
+  text-transform: uppercase;
+  color: rgb(18, 147, 186);
+  margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.card h6 {
+  color: rgb(9, 98, 126);
+  text-align: left;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/* Párrafos */
+.card p {
+  color: black;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Tecnologías */
+.card .tecnologias {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.html i, .css i, .js i, .angular i {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* Enlaces de botones */
+.card .btn {
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 8px 10px;
+  transition: all 0.3s ease;
+}
+
+.card .btn-outline-dark:hover {
+  background-color: rgb(18, 147, 186);
+  color: white;
+  border-color: rgb(18, 147, 186);
+}
+
+.card .btn-primary {
+  background-color: rgb(18, 147, 186);
+  border-color: rgb(18, 147, 186);
+}
+
+.card .btn-primary:hover {
+  background-color: rgb(9, 98, 126);
+  border-color: rgb(9, 98, 126);
+}
+
+/* Botón volver */
+.back a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.4);
+  transition: all 0.3s;
+}
+
+.back a:hover {
+  color: black;
+}
+
+/* 📱 Media Queries */
+@media screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* #portfolio{
     padding-top: 30px;
     min-height: 700px;
 }
@@ -400,7 +522,7 @@ div.fotoPerfil > img {
 
 .github > a:hover, .web > a:hover{
     color: rgb(9, 98, 126);
-}
+} */
 
 
 /* estilos educación */
