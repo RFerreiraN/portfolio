@@ -100,6 +100,18 @@ body, html{
     border-bottom: 1px solid rgb(18, 147, 186);
 }
 
+.navbar-toggler{
+    color: rgb(18, 147, 186);
+}
+
+.navbar-toggler {
+  border-color: #1293BA; /* borde */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%231293BA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .menu{   
     flex: 25%;
     width: 100%;
@@ -112,14 +124,16 @@ body, html{
 }
 
 
-.menu ul li a{
+.nav-link {
     color: rgb(18, 147, 186);
-    text-decoration: none;
+    transition: all 0.5s;
 }
 
-.menu ul li a:hover{
+.nav-link:hover{
     color: rgb(9, 98, 126);
 }
+
+
 
 .list{
     flex: 75%;
@@ -411,119 +425,6 @@ div.fotoPerfil > img {
     margin-bottom: 20px;
   }
 }
-
-
-/* #portfolio{
-    padding-top: 30px;
-    min-height: 700px;
-}
-
-.tituloPortfolio {
-    margin-top: 30px;
-    text-align: center;   
-}
-
-.tituloPortfolio a{ 
-    color: rgb(9, 98, 126);
-    text-decoration: underline;
-}
-
- 
-.proyectos{
-    display: inline-flex;
-    padding: 70px;
-    gap: 15px;
-}  
-
-.proyecto1, .proyecto2, .proyecto3, .proyecto4{
-    width:20%;
-    height: auto;
-    border: 2px solid rgb(9, 98, 126);
-    border-radius: 10px;
-    opacity: 70%;
-    transition: all 0.3s;
-}
-
-
-.proyecto1:hover, .proyecto2:hover, .proyecto3:hover, .proyecto4:hover{
-    opacity: 100%;
-    transform: scale(1.05);
-}
-
-
-.proyecto1 > img , .proyecto2 > img, .proyecto3 > img{
-    width: 100%;
-    border-bottom: 1px solid rgb(9, 98, 126);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;  
-    padding: 3px;
-}
-
-.proyecto4 > img{
-    width: 100%;
-    height: 34%;
-    border-bottom: 1px solid rgb(9, 98, 126);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;  
-    padding: 3px;
-}
-
-
-
-.proyecto1 h3, .proyecto2 h3, .proyecto3 h3, .proyecto4 h3{
-    text-transform: uppercase;
-    color: rgb(18, 147, 186);
-    margin-left: 10px;
-}
-
-.proyectos h6{
-    color: rgb(9, 98, 126);
-    text-align: left;
-    padding: 10px;
-}
-
-.proyecto1 p, .proyecto2 p, .proyecto3 p, .proyecto4 p{
-    color: black;
-    margin-left: 10px;
-    font-size: 12px;
-} 
-
- .tecnologias{
-    display: inline-flex;
-    text-align: center;
-    font-size: 25px;
-    padding-left: 10px;
-    gap: 10px;
-}
-
-
-.html i, .css i, .js i, .angular i{
-    border: 1px solid black;
-    border-radius: 50%; 
-    font-size: 15px;
-    padding: 5px;  
-    
-}
-
-.enlaces{
-    display: inline-flex;
-    text-align: center;
-    font-size: 25px;
-    padding-left: 10px;
-    gap: 10px;  
-}
-
-.github > a, .web > a{
-    color: black;
-    border-radius: 50%; 
-    font-size: 15px;
-    padding: 5px; 
-    transition: all 0.4s;       
-}
-
-.github > a:hover, .web > a:hover{
-    color: rgb(9, 98, 126);
-} */
 
 
 /* estilos educación */
