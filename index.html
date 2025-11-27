@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,115 @@
     <link rel="icon" href="../IMG/icons8-google-code-120.png">
     <script src="../JS/main.js"></script>
     <script src="https://kit.fontawesome.com/a669f840a0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.topology.min.js"></script>
+
+
     <title>Portfolio RFerreira</title>
 </head>
+
 <body>
 
-    <!-- BARRA DE NAVEGACIÓN -->
+    <div id="vanta-bg" style="width: 100%; height: 100vh;"></div>
     <div class="contenedor">
-        <div class="navbar">
-            <div class="columna1">
-            
-                <div class="nombre">
-                    <h1 class="two-color-text"><a href="index.html">RF</a></h1>
-                    <li><strong>Ricardo</strong></li>
-                    <!-- <p>Web Developer</p> -->
+            <div class="navbar">
+                <div class="columna1">
+
+                    <div class="nombre">
+                        <h1 class="two-color-text"><a href="index.html">RF</a></h1>
+                        <li><strong>Ricardo</strong></li>
+                        <!-- <p>Web Developer</p> -->
+                    </div>
+
+
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#about">Sobre Mí</a> </li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#educacion">Educación</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <footer>
+                        <a href="https://www.linkedin.com/in/ricardoferreiran" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RFerreiraN" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:ricardoferreiran@gmail.com" target="_blank"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </footer>
                 </div>
-                
-        
-                <div class="menu">
-                    <ul>
-                    <li><a href="#about">Sobre Mí</a> </li>
-                    <li><a href="#portfolio">Portfolio</a></li> 
-                    <li><a href="#educacion">Educación</a></li> 
-                    <li><a href="#skills">Skills</a></li>  
-                    <li><a href="#contacto">Contacto</a></li>  
-                    </ul>
+            </div>
+
+            <div class="columna2">
+
+                <div class="secciones">
+
+                    <section id="home">
+                        <h1>Hola,</h1>
+                        <h1>Soy <span class="two-color-text">R</span>icardo Ferreira,</h1>
+                        <h1>Web Developer</h1>
+                        <p>Front End Developer</p><br><br>
+                        <a href="" target="_blank">Descarga mi CV!</a>
+                    </section>
+
+                    <section id="about">
+                        <h1><span class="two-color-text">SOBRE MÍ</span></h1>
+                        <p>¡Hola! Soy Ricardo Ferreira, un apasionado desarrollador web en constante evolución. Hace un
+                            par
+                            de años empecé mi andar en el mundo de la programación, me he dedicado a aprender y
+                            perfeccionar
+                            mis habilidades para crear soluciones web que no solo sean funcionales, sino también
+                            visualmente
+                            atractivas.</p><br><br>
+                        <h2>Actualmente aparte de continuar con mi preparación busco ampliar mi campo laboral en el
+                            mundo
+                            del desarrollo web.</h2><br>
+                        <p>Puedes ponerte en contacto conmigo a traves de mi <a href="mailto:ricardoferreiran@gmail.com"
+                                target="_blank">Correo.</a></p>
+                        <p>Y si quieres saber un poco de mi experiencia laboral en detalle puede hacer en <a
+                                href="https://www.linkedin.com/in/ricardoferreiran">LinkedIn.</a></p>
+                    </section>
+
+                    <section id="portfolio">
+                        <h1>Portfolio</h1>
+                    </section>
+
+                    <section id="educacion">
+                        <h1>Educación</h1>
+                    </section>
+
+                    <section id="skills">
+                        <h1>Skills</h1>
+                    </section>
+
+                    <section id="contacto">
+                        <h1>Contacto</h1>
+                    </section>
                 </div>
 
-                <footer>
-                    <a href="https://www.linkedin.com/in/ricardoferreiran" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/RFerreiraN" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:ricardoferreiran@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                </footer>  
+
             </div>
         </div>
 
-        <div class="columna2">
+    <!-- BARRA DE NAVEGACIÓN -->
 
-            <div class="secciones">
+    <script>
+        VANTA.TOPOLOGY({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x222222,
+            backgroundColor: 0x0
+        })
+    </script>
 
-                <section id="home">
-                    <h1>Hola,</h1>
-                    <h1>Soy <span class="two-color-text">R</span>icardo Ferreira,</h1>
-                    <h1>Web Developer</h1>
-                    <p>Front End Developer</p><br><br>
-                    <a href="" target="_blank">Descarga mi CV!</a>
-                </section>
+</body>
 
-                <section id="about">
-                    <h1><span class="two-color-text">SOBRE MÍ</span></h1>
-                    <p>¡Hola! Soy Ricardo Ferreira, un apasionado desarrollador web en constante evolución. Hace un par de años empecé mi andar en el mundo de la programación, me he dedicado a aprender y perfeccionar mis habilidades para crear soluciones web que no solo sean funcionales, sino también visualmente atractivas.</p><br><br>
-                    <h2>Actualmente aparte de continuar con mi preparación busco ampliar mi campo laboral en el mundo del desarrollo web.</h2><br>
-                    <p>Puedes ponerte en contacto conmigo a traves de mi <a href="mailto:ricardoferreiran@gmail.com" target="_blank">Correo.</a></p>
-                    <p>Y si quieres saber un poco de mi experiencia laboral en detalle puede hacer en <a href="https://www.linkedin.com/in/ricardoferreiran">LinkedIn.</a></p>
-                </section>
-        
-                <section id="portfolio">
-                    <h1>Portfolio</h1>
-                </section>
-        
-                <section id="educacion">
-                    <h1>Educación</h1>
-                </section>
-        
-                <section id="skills">
-                    <h1>Skills</h1>
-                </section>
-        
-                <section id="contacto">
-                    <h1>Contacto</h1>
-                </section>
-            </div>
-                
-                         
-        </div>
-    </div>
-
-<!-- CONTENIDO Y SECCIONES -->
-   
-
-    
+</html>
