@@ -1,6 +1,85 @@
-/* Importaciones*/
+/* Importaciones
 
 /* Colores */
+
+/* :root {
+    --primary-color: #087e8b;
+    --primary-color-dark: #0b3954;
+    --secondary-color: #ff5a5f;
+    --secondary-color-dark: #c81d25;
+    --gray-color: #ccc;
+    --gray-color-dark: #333;
+
+} */
+
+/* @font-face {
+    font-family: 'yanone';
+    src: url('./fonts/yanone.ttf');
+}
+
+@font-face {
+    font-family: 'finger';
+    src: url('./fonts/finger.ttf');
+}
+
+@font-face {
+    font-family: 'titilium';
+    src: url('./fonts/titilium.ttf');
+}
+
+@font-face {
+    font-family: 'BubblegumSans';
+    src: url('./fonts/BubblegumSans.ttf');
+} */
+
+/* Estilos generales */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'yanone';
+}
+
+body,
+html {
+    overflow-x: hidden;   
+}
+
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* pone el fondo detrás del contenido *} /
+
+
+/* 
+.contenedor {
+    position: relative;
+    z-index: 10; /*pone el contenido delante del background*/
+/* } */
+
+/* header{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+} */
+/* 
+header h1{
+    font-size: 80px;
+} */
+
+
+/* ********************************** */
+
+/* ---------------------- */
+/*        VARIABLES       */
+/* ---------------------- */
 
 :root {
     --primary-color: #087e8b;
@@ -9,8 +88,11 @@
     --secondary-color-dark: #c81d25;
     --gray-color: #ccc;
     --gray-color-dark: #333;
-
 }
+
+/* ---------------------- */
+/*       TIPOGRAFÍAS      */
+/* ---------------------- */
 
 @font-face {
     font-family: 'yanone';
@@ -32,20 +114,26 @@
     src: url('./fonts/BubblegumSans.ttf');
 }
 
-/* Estilos generales */
+/* ---------------------- */
+/*    ESTILOS GENERALES    */
+/* ---------------------- */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-    font-family: 'yanone';
+    font-family: 'yanone', sans-serif;
 }
 
 body,
 html {
-    overflow-x: hidden;   
+    height: 100%;
+    overflow-x: hidden;
 }
+
+/* ---------------------- */
+/*        FONDO VANTA      */
+/* ---------------------- */
 
 #vanta-bg {
     position: fixed;
@@ -54,22 +142,114 @@ html {
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* pone el fondo detrás del contenido */
+    /* detrás del contenido */
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
+/* ---------------------- */
+/*     CONTENEDOR          */
+/* ---------------------- */
 
 .contenedor {
     position: relative;
-    z-index: 10; /*pone el contenido delante del background*/
+    z-index: 10;
+    min-height: 100vh;
+
+    /* Centrado vertical y horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-header{
+/* ---------------------- */
+/*       HEADER           */
+/* ---------------------- */
+
+header {
     width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    /* columna en móvil */
+    align-items: center;
+    /* centrar en móvil */
     text-align: center;
+    gap: 20px;
+}
+
+/* Bloque de texto */
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Espacio entre icono y texto */
+.texto h5 i {
+    margin-right: 8px;
+}
+
+/* Tipos de letra */
+.texto h1 {
+    font-size: clamp(40px, 7vw, 80px);
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.texto h3 {
+    font-size: clamp(18px, 3vw, 32px);
+    color: white;
+
+}
+
+.texto h5 {
+    font-size: clamp(14px, 2vw, 20px);
+    color: var(--gray-color);
+}
+
+.texto ul {
+    list-style: none;       
+    display: flex;          
+    gap: 10px;              
+    padding-left: 0;              
+    justify-content: flex-start; 
+}
+
+.texto ul li i {
+    border: 1px solid #333;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Foto de perfil */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--gray-color);
+}
+
+
+/* ---------------------- */
+/*    DESKTOP (>768px)    */
+/* ---------------------- */
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        /* fila en desktop */
+        justify-content: space-between;
+        /* texto izquierda, foto derecha */
+        align-items: center;
+        text-align: left;
+    }
+
+    .texto {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
 }
