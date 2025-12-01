@@ -325,9 +325,77 @@ section p {
     padding: 10px 15px;
     font-weight: 500;
     font-size: 20px;
- 
-  
 }
+
+/* Proyectos */
+
+/* Tarjeta general */
+.card {
+    width: 100%;             
+    max-width: 250px;        
+    height: 350px;           
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s, box-shadow .3s;
+    overflow: hidden;        
+    background-color: #333;  
+    border: 1px solid #ccc;  
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.4);
+}
+
+/* Card body principal (título y descripción) */
+.card-body {
+    flex: 1;
+    background-color: #333;                 
+    color: #ccc;
+    padding: 10px;
+}
+
+/* Título */
+.card-body a {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.card-body p {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* Lista de tecnologías o características */
+.card ul.list-group li {
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border: none;
+}
+
+/* Centrar la tarjeta dentro de la columna */
+.col-12.col-sm-6.col-lg-4.col-xl-3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Separación entre tarjetas */
+.row.g-4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 
 /* ---------------------- */
 /*    DESKTOP (>768px)    */
