@@ -361,3 +361,19 @@ footer h5{
 @media (max-width : 768px) {
     #habilidades h1, #experiencia h1, #proyectos h1, #educacion h1 { text-align: center; }
 }
+
+/* Evitar que el fondo Vanta desaparezca en móviles */
+@media (max-width: 768px) {
+    #vanta-bg {
+        position: fixed !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow: hidden !important;
+    }
+
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+}
