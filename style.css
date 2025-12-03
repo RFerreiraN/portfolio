@@ -133,7 +133,8 @@ header {
 }
 
 .texto h3 {
-    font-size: clamp(45px, 5vw, 70px);
+    font-size: clamp(55px, 5vw, 85px);
+    font-family: 'Humane';
     font-weight: 400;
     color: #ccc;
 
