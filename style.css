@@ -141,7 +141,7 @@ header {
 
 .texto h5 {
     font-size: clamp(14px, 2vw, 20px);
-    color: var(--gray-color);
+    color: #ccc;
 }
 
 .texto ul {
@@ -165,8 +165,8 @@ header {
 /* Foto de perfil */
 
 .foto-perfil {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid #ccc;
