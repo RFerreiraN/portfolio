@@ -9,29 +9,7 @@
     src: url('./fonts/yanone.ttf');
 }
 
-@font-face {
-    font-family: 'finger';
-    src: url('./fonts/finger.ttf');
-}
 
-@font-face {
-    font-family: 'titilium';
-    src: url('./fonts/titilium.ttf');
-}
-
-@font-face {
-    font-family: 'BubblegumSans';
-    src: url('./fonts/BubblegumSans.ttf');
-}
-
-@font-face {
-    font-family: 'Mango Grotesque';
-    src: url('./fonts/MangoGrotesque-ExtraLight.woff') format('woff2'),
-        url('./fonts/MangoGrotesque-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    /* ExtraLight */
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Humane';
