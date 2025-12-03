@@ -1,634 +1,387 @@
-/* Importaciones*/
 
-/* Colores */
+
+/* ---------------------- */
+/*       TIPOGRAFÍAS      */
+/* ---------------------- */
 
 @font-face {
     font-family: 'yanone';
     src: url('./fonts/yanone.ttf');
- }
+}
 
- @font-face {
+@font-face {
     font-family: 'finger';
     src: url('./fonts/finger.ttf');
- }
+}
 
- @font-face {
+@font-face {
     font-family: 'titilium';
     src: url('./fonts/titilium.ttf');
- }
+}
 
- @font-face {
+@font-face {
     font-family: 'BubblegumSans';
     src: url('./fonts/BubblegumSans.ttf');
- }
+}
 
- @font-face {
-    font-family: '';
-    src: url('./fonts/Oswald.ttf');
- }
+@font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/MangoGrotesque-ExtraLight.woff') format('woff2'),
+        url('./fonts/MangoGrotesque-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    /* ExtraLight */
+    font-style: normal;
+}
 
- @font-face{
-    font-family: 'Honk';
-    src: url('./fonts/Honk.ttf');
- }
+@font-face {
+    font-family: 'Humane';
+    src: url('./fonts/Humane-Light.woff2') format('woff2'),
+        url('./fonts/Humane-Light.woff') format('woff');
+    font-weight: 200;
+    /* ExtraLight */
+    font-style: normal;
+}
 
- @font-face {
-    font-family: 'changa';
-    src: url('./fonts/Changa.ttf');
- }
 
- /* Estilos generales */
 
- *{
+/* ---------------------- */
+/*    ESTILOS GENERALES    */
+/* ---------------------- */
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    
+    box-sizing: border-box;
+    font-family: 'yanone', sans-serif;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-body, html{
-    font-family: 'changa', Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
-    font-size: 18px;
+body,
+html {
     height: 100%;
-    
+    overflow-x: hidden;
 }
 
-.back{
-    display: block;
-    margin-right: 50px;
-    
-}
+/* ---------------------- */
+/*        FONDO VANTA      */
+/* ---------------------- */
 
-.back a{
-    text-decoration: none;
-    color: rgb(0,0,0,0.3);
-    transition: all 0.3s;
-}
-
-.back a:hover{
-    color: black;
-}
-/* Estilos navbar */
-
-.fixed{
+#vanta-bg {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: white;
-    z-index: 1000; 
+    height: 100%;
+    z-index: -1;
+    /* detrás del contenido */
 }
 
-.navbar-brand span{
-        color: rgb(9, 98, 126);
+/* ---------------------- */
+/*     CONTENEDOR          */
+/* ---------------------- */
 
-}
+.contenedor {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
 
- .navbar{
-    display: inline-flex;
-    position: sticky;
-    padding: 10px;
-    width: 100%;
-    justify-content:space-around ;
-    align-items: center;
-    border-bottom: 1px solid rgb(18, 147, 186);
-}
-
-.navbar-toggler{
-    color: rgb(18, 147, 186);
-}
-
-.navbar-toggler {
-  border-color: #1293BA; /* borde */
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%231293BA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.menu{   
-    flex: 25%;
-    width: 100%;
-    height: inherit;
-    text-align:center; 
-}
-
-.menu ul li{
-    list-style: none; 
-}
-
-
-.nav-link {
-    color: rgb(18, 147, 186);
-    transition: all 0.5s;
-}
-
-.nav-link:hover{
-    color: rgb(9, 98, 126);
-}
-
-
-
-.list{
-    flex: 75%;
-    width: 100%;
-    height: 40px;
-    text-align: right;
-    
-}
-
-.list > ul > li {
-    display: inline-flex;
-    
-}
-
-.list li a.is-active {
-    text-shadow: 1px 1px 1cm blue;
-    transform: scale(1.10);
-    
-}
-
-.list > ul > li > a{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: rgb(18, 147, 186);
-    text-decoration: none;
-    transition: all 0.3s;     
-}
-
-.list > ul > li > a:hover{
-    transform: scale(1.10);
-    color: rgb(9, 98, 126);
-}
-
-/* Estilos about*/
-
-.secciones {
-     display: flex;
-     flex-wrap: wrap;
-     width: 100%;
-     height: auto;
-     padding-top: 80px;
-}
-
-.left{
-    width:40%;
-    height: auto;
-    font-size: 18px; 
-    padding-left: 70px;
-}
-
-.left span{
-    color: rgb(18, 147, 186);
-}
-
-.left ul li{
-    list-style: none;
-}
-
-.left > ul > li > a{
-    
-    padding: 5px 30px;
-    text-decoration: none;
-    background-color: rgb(18, 147, 186);
-    color: black;
-    border-radius: 5px;
-    transition: all 0.4s;  
-}
-
-
-.left > ul > li > a:hover{
-    background-color: rgb(9, 98, 126);
-    color: white;
-}
-
-.links{
-    margin-top: 25px;  
-}
-
-.links > ul > li  {
-    display: inline-flex;
-    padding: 8px;
-    font-size: 22px;   
-}
-
-.links ul li a{
-    color: black;
-    transition: all 0.4s;
-}
-
-.links ul li a:hover{
-    color: rgb(18, 147, 186);
-    transform: scale(1.15);
-}
-
-.rigth{
-    width: 60%;  
-    height: 20%;
-    text-align: center;
-
-}
-
-div.fotoPerfil > img {
-    width: 30%;
-    border-radius: 10%;   
-    overflow: hidden;
-}
-
-.titulo {
-    width: 100%;
-    text-align: center;
-}
-
-.titulo a{
-    color: rgb(9, 98, 126);
-    text-decoration: underline;
-
-}
-
-.about{
+    /* Centrado vertical y horizontal */
     display: flex;
-    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1,
+h3 {
+    font-family: 'Humane', sans-serif;
+    letter-spacing: 4px;
+}
+
+/* ---------------------- */
+/*       HEADER           */
+/* ---------------------- */
+
+header {
     width: 100%;
-    /* height: auto; */
-    padding-top: 15px;
-    padding-right: 115px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    /* columna en móvil */
+    align-items: center;
+    /* centrar en móvil */
+    text-align: center;
+    gap: 20px;
+}
+
+/* Bloque de texto */
+.texto {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-.foto2{
-    flex: 10%;
-    text-align: center;
-    
+/* Espacio entre icono y texto */
+.texto h5 i {
+    margin-right: 8px;
 }
 
-.foto2 > img{
-    border-radius: 10%;
-    overflow: hidden;
+/* Tipos de letra */
+.texto h1 {
+    font-size: clamp(65px, 10vw, 96px);
+    font-weight: 300;
+    color: #ccc;
 }
 
-.aboutTexto{
-    flex: 30%;
-    background-color: white; 
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
+.texto h3 {
+    font-size: clamp(55px, 5vw, 85px);
+    font-family: 'Humane';
+    font-weight: 400;
+    color: #ccc;
+
 }
 
-.about p{
-    font-size: 13px;
-    text-align: center;
+.texto h5 {
+    font-size: clamp(14px, 2vw, 20px);
+    color: #ccc;
 }
 
-.back {
-    flex: 100%;
-    text-align: right;
-    
-}
-
-.back ul li{
+.texto ul {
     list-style: none;
-}
-
-.back ul li a{
-    text-decoration: none;
-    color: rgb(0,0,0,0.3);
-    transition: all 0.4s;
-}
-
-.back ul li a:hover{
-    color: black;
-}
-
-/* estilos portfolio */
-
-/* 🎨 Estilos Portfolio con Bootstrap Grid */
-#portfolio {
-  padding-top: 30px;
-  min-height: 700px;
-}
-
-.tituloPortfolio {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.tituloPortfolio a {
-  color: rgb(9, 98, 126);
-  text-decoration: underline;
-}
-
-/* Cards de proyectos */
-.card {
-  border: 2px solid rgb(9, 98, 126);
-  border-radius: 10px;
-  opacity: 0.85;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  opacity: 1;
-  transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-  border-bottom: 1px solid rgb(9, 98, 126);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 3px;
-}
-
-/* Títulos */
-.card h3 {
-  text-transform: uppercase;
-  color: rgb(18, 147, 186);
-  margin-bottom: 10px;
-}
-
-/* Subtítulo */
-.card h6 {
-  color: rgb(9, 98, 126);
-  text-align: left;
-  padding: 5px 0;
-  font-size: 14px;
-}
-
-/* Párrafos */
-.card p {
-  color: black;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-/* Tecnologías */
-.card .tecnologias {
-  display: flex;
-  gap: 10px;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.html i, .css i, .js i, .angular i {
-  border: 1px solid black;
-  border-radius: 50%;
-  font-size: 14px;
-  padding: 5px;
-}
-
-/* Enlaces de botones */
-.card .btn {
-  border-radius: 50%;
-  font-size: 14px;
-  padding: 8px 10px;
-  transition: all 0.3s ease;
-}
-
-.card .btn-outline-dark:hover {
-  background-color: rgb(18, 147, 186);
-  color: white;
-  border-color: rgb(18, 147, 186);
-}
-
-.card .btn-primary {
-  background-color: rgb(18, 147, 186);
-  border-color: rgb(18, 147, 186);
-}
-
-.card .btn-primary:hover {
-  background-color: rgb(9, 98, 126);
-  border-color: rgb(9, 98, 126);
-}
-
-/* Botón volver */
-.back a {
-  text-decoration: none;
-  color: rgba(0,0,0,0.4);
-  transition: all 0.3s;
-}
-
-.back a:hover {
-  color: black;
-}
-
-/* 📱 Media Queries */
-@media screen and (max-width: 767px) {
-  .card {
-    margin-bottom: 20px;
-  }
-}
-
-
-/* estilos educación */
-
-#eduacacion{
-    padding-top: 30px;
-    min-height: 700px;
-}
-
-.tituloEducacion {
-    padding-top: 60px;
-    text-align: center;   
-}
-
-.tituloEducacion a{ 
-    color: rgb(9, 98, 126);
-    text-decoration: underline;
-}
-
-.diplomas{
-    border-bottom: 1px solid rgb(9, 98, 126);
-    padding: 30px;
-}
-
-.diplomas h2 {
-    color: rgb(9, 98, 126);
-}
-
-.diplomas h3{
-    color: rgb(18, 147, 186);
-}
-
-.diplomas a{
-    text-decoration: none;
-    background-color: rgb(18, 147, 186);
-    border: none;
-    color: black;
-    margin-top: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.diplomas a:hover{
-    background-color: rgb(9, 98, 126);
-    color: white;
-}
-
-/* estilos skills */
-
-#skills{
-    padding-top: 30px;
-    min-height: 800px;
-    text-align: center;
-}
-
-.skills{
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 3px;
+    padding-left: 0;
+    justify-content: center;
 }
 
-#skills h3{
-    width: 100%;
-    color: rgb(18, 147, 186);
-    padding-left: 30px;
-    text-align: center;
-    padding-bottom: 15px;
+.texto ul li i {
+    border: 1px solid #333;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
 }
 
-.tituloSkills {  
-    padding-top: 60px;
-    text-align: center;   
+
+/* Foto de perfil */
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ccc;
 }
 
-.tituloSkills a{ 
-    color: rgb(9, 98, 126);
-    text-decoration: underline;
-   
-}
+/* Sobre mi */
 
-.lenguajes, .frameworks, .software{
-    flex: 100%;
-    padding: 20px;
-}
-
-.lenguajes > img, .frameworks > img, .software > img{
-    width: 70px;
-    margin-left: 30px;
-}
-
-/* estilos contacto */
-
-#contacto{
-    padding-top: 60px;
-    min-height: 600px;  
-}
-
-.tituloContacto {  
-    padding-top: 30px;
-    text-align: center;   
-}
-
-.tituloContacto a{ 
-    color: rgb(9, 98, 126);
-    text-decoration: underline;   
-}
-
-.links-contact{
-    padding-left: 30px;
-}
-
-.fa-linkedin, .fa-github, .fa-envelope{
+section p {
+    color: #ccc;
     font-size: 20px;
 }
 
-.links-contact  span {
-    color: rgb(18, 147, 186);
+.mt-extra {
+    margin-top: 6rem;
 }
 
-.links-contact a{
-    color: rgb(9, 98, 126);
+/* Habilidades */
+
+#habilidades h1,
+#experiencia h1,
+#proyectos h1,
+#educacion h1 {
+    font-weight: bold;
+    color: #ccc;
+    font-size: 70px;
+    text-align: start;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+#habilidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+}
+
+#habilidades ul li {
+    color: #ccc;
+    padding: 3px 35px;
+    margin: 5px;
+    background-color: #333;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+    text-align: center;
+    transition: transform .3s, box-shadow .3s;
+}
+
+#habilidades ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Experiencia */
+
+#experiencia h3 {
+    font-family: 'yanone';
+    font-size: 25px;
+    color: #ccc;
+}
+
+#experiencia ul li {
+    color: #ccc;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* Proyectos */
+
+/* Tarjeta general */
+.card {
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s, box-shadow .3s;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Card body principal (título y descripción) */
+.card-body {
+    flex: 1;
+    background-color: #333;
+    color: #ccc;
+    padding: 10px;
+}
+
+/* Título */
+.card-body a {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
 }
 
-/* estilos footer */
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.card-body p {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* Lista de tecnologías o características */
+.card ul.list-group li {
+    background-color: #333;
+    color: #ccc;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: none;
+}
+
+/* Centrar la tarjeta dentro de la columna */
+.col-12.col-sm-6.col-lg-4.col-xl-3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Separación entre tarjetas */
+.row.g-4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Educacion */
+
+#educacion .edu-item {
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #444;
+}
+
+#educacion .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#educacion h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+#educacion span {
+    color: #aaa;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 4px 20px;
+}
+
+#educacion p {
+    margin: 5px 0 0;
+    color: #ccc;
+    font-size: 15px;
+}
+
+/* footer */
 
 footer{
-    display: block;
-    border-top: 1px solid rgb(9, 98, 126);  
-    padding: 15px;  
-}
-
-footer li{
-    list-style: none;
-}
-
-footer a{
-    text-decoration: none;
-    color: rgb(18, 147, 186);
-     
-}
-
-
-
-/* Media Queries */
-@media screen and (max-width: 767px){
-.fixed{
-    position: relative;
-}
-
-.navbar{
-    display: block;
-    border: none;
-    text-align: center;
-}
-.list{
-    display: block;
-    
-}
- .list ul li{
     width: 100%;
-    margin: 5px;
-    border: 1px solid rgb(9, 98, 126);  
-    border-radius: 8px;
-}
-
-.list ul li a{
-    
-    width: 100%;
+    padding: 20px;
     text-align: center;
 }
 
-.left{
-    width: 100%;
-    margin-top:100px;
-}
-
-.rigth{
-    width: 100%;
-}
-
-.foto2{
-    display: none;
-}
-
-.aboutTexto{
-    margin-left: 100px;
-    width: 100%;
-}
-
-.proyectos{
-    display: block;
-    
-}
-
-.proyecto1, .proyecto2, .proyecto3, .proyecto4{
-    width: 100%;
-    margin-bottom: 15px;
+footer h5{
+    color: #ccc;
 }
 
 
+
+/* ---------------------- */
+/*    DESKTOP (>768px)    */
+/* ---------------------- */
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        /* fila en desktop */
+        justify-content: space-between;
+        /* texto izquierda, foto derecha */
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .texto {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width : 768px) {
+    #habilidades h1, #experiencia h1, #proyectos h1, #educacion h1 { text-align: center; }
 }
