@@ -262,7 +262,7 @@ section p {
     padding: 18px;
 }
 
-.projects-title {
+#proyectos .projects-title {
     text-align: center;
     width: 100%;
     letter-spacing: 4px;
